@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nakshathra Rolla | Lightweight 22K Gold, Grand Mall Sharjah</title>
+<meta name="description" content="Nakshathra Jewellery, Grand Mall Rolla, Sharjah. Lightweight 22K (916) and 18K hallmarked gold, certified diamonds and bridal collections. Ask for today's gold rate on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Malayalam:wght@500&display=swap" rel="stylesheet">
+<style>
+/* Layout concept: a kasavu saree. Ivory cloth, gold zari borders between sections, one deep maroon band for the moment of decision. */
+:root{
+  --cloth:#F5EEDF;       /* kasavu ivory */
+  --cloth-2:#ECE2CC;
+  --zari:#B8862B;        /* gold thread */
+  --zari-2:#D9B25F;
+  --temple:#5B1A1C;      /* temple maroon */
+  --ink:#21170F;
+  --soft:#6E5E4B;
+  --display:'Marcellus',Georgia,serif;
+  --body:'Hanken Grotesk',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --ml:'Noto Serif Malayalam',serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cloth);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1220px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;text-wrap:balance}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--zari)}
+:focus-visible{outline:2px solid var(--zari);outline-offset:3px}
+
+/* zari border: the signature */
+.zari{height:22px;background:
+  linear-gradient(var(--zari),var(--zari)) 0 3px/100% 2px no-repeat,
+  linear-gradient(var(--zari),var(--zari)) 0 17px/100% 2px no-repeat,
+  repeating-linear-gradient(90deg,var(--zari) 0 10px,transparent 10px 14px,var(--zari-2) 14px 16px,transparent 16px 20px) 0 8px/100% 6px no-repeat;
+  transform-origin:left;}
+.js .zari.draw{transform:scaleX(0);transition:transform 1.6s var(--ease)}
+.js .zari.draw.in{transform:none}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font-family:var(--body);font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--ink);transition:background .3s,color .3s,transform .3s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--temple);border-color:var(--temple);color:var(--cloth)}
+.btn-wa:hover{background:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--cloth)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* top bar */
+.top{background:var(--ink);color:var(--cloth-2);font-family:var(--mono);font-size:12px;letter-spacing:.06em}
+.top .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.top b{color:var(--zari-2);font-weight:500}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(245,238,223,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(184,134,43,.3)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-block:14px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:34px;height:34px}
+.brand b{font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:.06em;display:block;line-height:1}
+.brand small{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--soft)}
+.menu{display:flex;gap:30px;font-size:14px;font-weight:500}
+.menu a{text-decoration:none;opacity:.8}
+.menu a:hover{opacity:1;color:var(--temple)}
+.nav .btn{padding:11px 18px;font-size:14px}
+
+/* hero */
+.hero{padding-block:clamp(40px,6vw,80px) clamp(50px,7vw,90px)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center}
+.hero-copy{min-width:0}
+.hero .ml{font-family:var(--ml);color:var(--zari);font-size:20px;margin-bottom:18px;display:block}
+.hero h1{font-size:clamp(46px,7vw,92px);letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--temple)}
+.hero h1 .w{display:inline-block}
+.js .hero h1 .w{opacity:0;transform:translateY(.4em);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.loaded .hero h1 .w{opacity:1;transform:none}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);color:var(--soft);max-width:30em;margin:26px 0 34px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:28px;margin-top:40px;flex-wrap:wrap;font-size:14px;color:var(--soft)}
+.trust b{display:block;font-family:var(--display);font-weight:400;font-size:30px;color:var(--ink);line-height:1.1}
+
+.frame{position:relative;min-width:0}
+.frame .pic{aspect-ratio:4/5;max-width:100%;overflow:hidden;border:1px solid var(--zari);padding:10px;background:var(--cloth)}
+.frame .pic img{width:100%;height:100%;object-fit:cover;transition:transform 6s var(--ease)}
+.loaded .frame .pic img{transform:scale(1.06)}
+.stamp{position:absolute;left:-28px;bottom:36px;width:150px;height:150px;border-radius:50%;background:var(--temple);color:var(--cloth);display:grid;place-items:center;text-align:center;box-shadow:0 18px 40px rgba(91,26,28,.3)}
+.stamp .ring{position:absolute;inset:0;animation:turn 30s linear infinite}
+.stamp b{font-family:var(--mono);font-size:34px;font-weight:500;line-height:1;display:block}
+.stamp span{font-family:var(--mono);font-size:10px;letter-spacing:.18em}
+@keyframes turn{to{transform:rotate(360deg)}}
+.star-float{position:absolute;right:-14px;top:-14px;width:56px;height:56px;color:var(--zari);animation:twinkle 4s ease-in-out infinite}
+@keyframes twinkle{50%{transform:rotate(22deg) scale(.88);opacity:.7}}
+
+/* hallmark strip */
+.marks{background:var(--ink);color:var(--cloth)}
+.marks .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:0}
+.mark{padding:28px 20px;border-right:1px solid rgba(217,178,95,.25);min-width:0}
+.mark:last-child{border-right:0}
+.mark b{font-family:var(--mono);font-size:22px;font-weight:500;color:var(--zari-2);display:block}
+.mark span{font-size:14px;color:#CBBFA9}
+
+section{padding-block:clamp(70px,10vw,130px)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(36px,5vw,64px);margin-top:14px}
+.sec-head p{color:var(--soft);max-width:34em}
+
+/* lightweight story */
+.light .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.scale{position:relative;border:1px solid rgba(184,134,43,.45);padding:34px;background:var(--cloth-2)}
+.scale h3{font-size:26px;margin-bottom:24px}
+.bar-row{margin-bottom:22px}
+.bar-row .lbl{display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px}
+.bar-row .lbl span:last-child{font-family:var(--mono);color:var(--soft);font-size:12px}
+.track{height:14px;background:rgba(33,23,15,.08);position:relative;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;background:var(--ink);width:0;transition:width 1.8s var(--ease)}
+.fill.gold{background:linear-gradient(90deg,var(--zari),var(--zari-2))}
+.scale.in .fill.heavy{width:100%}
+.scale.in .fill.gold{width:58%}
+.scale small{display:block;margin-top:14px;font-size:13px;color:var(--soft)}
+.light h2{font-size:clamp(36px,5vw,64px);margin:14px 0 22px}
+.light p{color:var(--soft);margin-bottom:16px;max-width:32em}
+.light ul{list-style:none;margin:24px 0 32px;display:grid;gap:12px}
+.light li{display:flex;gap:12px;align-items:flex-start}
+.light li svg{width:18px;height:18px;flex:none;margin-top:5px;color:var(--zari)}
+
+/* occasion picker */
+.picker{background:var(--cloth-2)}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.chip{font-family:var(--body);font-size:15px;font-weight:500;padding:12px 20px;border:1.5px solid rgba(33,23,15,.25);background:transparent;color:var(--ink);cursor:pointer;transition:.3s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--cloth)}
+.pick{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--cloth);border:1px solid rgba(184,134,43,.45);min-height:460px}
+.pick-img{position:relative;overflow:hidden;min-height:320px}
+.pick-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s,transform 1.2s var(--ease)}
+.pick-img img.out{opacity:0;transform:scale(1.05)}
+.pick-copy{padding:clamp(28px,4vw,54px);display:flex;flex-direction:column;justify-content:center;min-width:0}
+.pick-copy h3{font-size:clamp(30px,3.6vw,46px);margin:12px 0 16px}
+.pick-copy p{color:var(--soft);margin-bottom:24px}
+.pick-copy .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+.pick-copy .tags span{font-family:var(--mono);font-size:12px;padding:6px 10px;border:1px solid rgba(184,134,43,.6);color:var(--soft)}
+.fade{transition:opacity .35s}
+.fade.out{opacity:0}
+
+/* collections */
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.col{text-decoration:none;display:block;min-width:0}
+.col .ph{aspect-ratio:3/4;max-width:100%;overflow:hidden;background:var(--cloth-2);margin-bottom:14px}
+.col .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.col:hover .ph img{transform:scale(1.07)}
+.col h3{font-size:24px;display:flex;justify-content:space-between;align-items:center}
+.col h3 i{font-style:normal;font-size:18px;color:var(--zari);transition:transform .4s var(--ease)}
+.col:hover h3 i{transform:translateX(6px)}
+.col p{font-size:14px;color:var(--soft)}
+
+/* exchange: maroon band */
+.exchange{background:var(--temple);color:var(--cloth)}
+.exchange .label{color:var(--zari-2)}
+.exchange h2{font-size:clamp(36px,5vw,66px);margin:14px 0 18px;max-width:14em}
+.exchange .intro{color:#E5D3C3;max-width:36em;margin-bottom:56px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(217,178,95,.4)}
+.step{padding:30px 28px 10px 0;min-width:0}
+.step+.step{padding-left:28px;border-left:1px solid rgba(217,178,95,.4)}
+.step .n{font-family:var(--mono);color:var(--zari-2);font-size:13px;letter-spacing:.12em}
+.step h3{font-size:28px;margin:12px 0 10px}
+.step p{color:#E5D3C3;font-size:16px}
+.exchange .btn{margin-top:46px;background:var(--cloth);color:var(--temple);border-color:var(--cloth)}
+.exchange .btn:hover{background:var(--zari-2);border-color:var(--zari-2);color:var(--ink)}
+
+/* reviews */
+.reviews .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px)}
+.score b{font-family:var(--display);font-weight:400;font-size:clamp(90px,12vw,150px);line-height:.9;display:block}
+.score .stars{color:var(--zari);font-size:22px;letter-spacing:4px;margin:10px 0}
+.score p{color:var(--soft)}
+.quotes{display:grid;gap:22px}
+.q{padding:30px 32px;background:var(--cloth-2);border-left:3px solid var(--zari)}
+.q p{font-family:var(--display);font-size:clamp(22px,2.2vw,28px);line-height:1.35}
+.q cite{display:block;margin-top:14px;font-style:normal;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--soft);text-transform:uppercase}
+
+/* visit */
+.visit{background:var(--cloth-2)}
+.visit .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,70px);align-items:start}
+.visit h2{font-size:clamp(36px,5vw,64px);margin:14px 0 30px}
+.rows{display:grid;border-top:1px solid rgba(33,23,15,.15)}
+.r{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid rgba(33,23,15,.15)}
+.r span{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--zari);padding-top:3px}
+.tip{background:var(--ink);color:var(--cloth);padding:clamp(28px,4vw,44px)}
+.tip .label{color:var(--zari-2)}
+.tip h3{font-size:30px;margin:14px 0 14px}
+.tip p{color:#CBBFA9;margin-bottom:26px}
+.tip .btn{background:var(--zari-2);border-color:var(--zari-2);color:var(--ink);width:100%;justify-content:center}
+.tip .btn+.btn{margin-top:10px;background:transparent;color:var(--cloth);border-color:rgba(245,238,223,.4)}
+
+footer{background:var(--ink);color:#A99C86;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-block:34px}
+
+.wa-float{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:10px;background:var(--temple);color:var(--cloth);text-decoration:none;padding:14px 20px 14px 16px;font-weight:600;font-size:14px;box-shadow:0 14px 30px rgba(91,26,28,.35);transform:translateY(120px);transition:transform .6s var(--ease)}
+.wa-float.show{transform:none}
+.wa-float svg{width:20px;height:20px}
+
+/* reveal: content is visible without JS */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:920px){
+  .menu{display:none}
+  .hero .wrap,.light .wrap,.reviews .wrap,.visit .wrap,.sec-head,.pick{grid-template-columns:1fr}
+  .frame{max-width:460px}
+  .stamp{left:auto;right:12px;bottom:-30px;width:120px;height:120px}
+  .stamp b{font-size:28px}
+  .marks .wrap{grid-template-columns:1fr 1fr}
+  .mark:nth-child(2){border-right:0}
+  .mark:nth-child(-n+2){border-bottom:1px solid rgba(217,178,95,.25)}
+  .cols{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .step,.step+.step{padding:26px 0;border-left:0;border-bottom:1px solid rgba(217,178,95,.4)}
+  .r{grid-template-columns:1fr;gap:4px}
+  .top .wrap span:last-child{display:none}
+  .nav .btn span{display:none}
+}
+@media (max-width:480px){.cols{grid-template-columns:1fr}.trust{gap:20px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 64 64"><path fill="currentColor" d="M32 2l6.2 17.6L56 12l-7.6 17.8L62 32l-13.6 2.2L56 52l-17.8-7.6L32 62l-6.2-17.6L8 52l7.6-17.8L2 32l13.6-2.2L8 12l17.8 7.6z"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.5 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" d="M4 12.5l5 5L20 6.5"/></symbol>
+</svg>
+
+<div class="top"><div class="wrap"><span>Grand Mall, Rolla · Open today until <b>11:30 PM</b></span><span>22K (916) &amp; 18K hallmarked gold · Certified diamonds</span></div></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Nakshathra Rolla">
+      <svg style="color:var(--zari)"><use href="#star"/></svg>
+      <span><b>NAKSHATHRA</b><small>GOLD &amp; DIAMONDS · ROLLA</small></span>
+    </a>
+    <nav class="menu" aria-label="Main">
+      <a href="#lightweight">Lightweight Gold</a><a href="#occasion">Shop by Occasion</a><a href="#exchange">Old Gold Exchange</a><a href="#visit">Visit Rolla</a>
+    </nav>
+    <a class="btn btn-wa wa-link" data-msg="Hi Nakshathra Rolla, could you share today's 22K gold rate?" href="#"><svg><use href="#wa"/></svg><span>Today's gold rate</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="ml" lang="ml">നക്ഷത്ര · the star of your collection</span>
+      <h1><span class="w">More</span> <span class="w">gold</span> <span class="w">on</span> <span class="w">you.</span><br><em><span class="w">Less</span> <span class="w">weight</span> <span class="w">on</span> <span class="w">your</span> <span class="w">bill.</span></em></h1>
+      <p class="lead">Our lightweight 22K jewellery gives you the full, rich look of traditional gold with fewer grams. You pay for less gold and wear it every day without feeling it.</p>
+      <div class="ctas">
+        <a class="btn btn-wa wa-link" data-msg="Hi Nakshathra Rolla, could you share today's 22K gold rate?" href="#"><svg><use href="#wa"/></svg>Get today's gold rate</a>
+        <a class="btn btn-line" href="#occasion">Find your piece</a>
+      </div>
+      <div class="trust">
+        <div><b>4.8 ★</b>2,881 Google reviews</div>
+        <div><b>916</b>Hallmarked 22K</div>
+        <div><b>6</b>Countries, one family</div>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="pic"><img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=1200&q=80" alt="Traditional 22K gold necklace"></div>
+      <div class="stamp" aria-label="Hallmarked 22 karat, 916 purity">
+        <svg class="ring" viewBox="0 0 150 150"><defs><path id="cr" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text font-family="IBM Plex Mono" font-size="10" letter-spacing="3.4" fill="#D9B25F"><textPath href="#cr">HALLMARKED · 22 KARAT · PURE GOLD · </textPath></text></svg>
+        <div><b>916</b><span>22K GOLD</span></div>
+      </div>
+      <svg class="star-float"><use href="#star"/></svg>
+    </div>
+  </div>
+</section>
+
+<div class="zari draw"></div>
+
+<div class="marks">
+  <div class="wrap">
+    <div class="mark"><b>22K · 916</b><span>Hallmarked gold</span></div>
+    <div class="mark"><b>18K</b><span>Hallmarked gold</span></div>
+    <div class="mark"><b>Certified</b><span>Diamond jewellery</span></div>
+    <div class="mark"><b>Bridal</b><span>Collections for every wedding</span></div>
+  </div>
+</div>
+
+<section class="light" id="lightweight">
+  <div class="wrap">
+    <div class="scale rv">
+      <h3>Same look. Fewer grams.</h3>
+      <div class="bar-row"><div class="lbl"><span>Traditional piece</span><span>full weight</span></div><div class="track"><div class="fill heavy"></div></div></div>
+      <div class="bar-row"><div class="lbl"><span>Nakshathra lightweight</span><span>lighter, same 22K</span></div><div class="track"><div class="fill gold"></div></div></div>
+      <small>Gold is priced by the gram. Fewer grams means a lower price for a piece that looks just as rich. Ask us to compare weights on any design.</small>
+    </div>
+    <div class="rv">
+      <span class="label">The world's largest lightweight collection</span>
+      <h2>Gold you can wear on a Tuesday.</h2>
+      <p>Heavy gold stays in the locker. Lightweight gold goes to work, to dinner and to every family function. It is still 22K, still hallmarked and still yours to exchange later.</p>
+      <ul>
+        <li><svg><use href="#check"/></svg>Lower price for the same visual impact</li>
+        <li><svg><use href="#check"/></svg>Comfortable enough for daily wear</li>
+        <li><svg><use href="#check"/></svg>Hallmarked purity on every piece</li>
+      </ul>
+      <a class="btn btn-wa wa-link" data-msg="Hi, I'd like to see your lightweight 22K collection. Can you send me some designs?" href="#"><svg><use href="#wa"/></svg>Send me lightweight designs</a>
+    </div>
+  </div>
+</section>
+
+<section class="picker" id="occasion">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="label">Shop by occasion</span><h2>What are you buying for?</h2></div>
+      <p>Tell us the moment. We'll show you where to start, and our team in Rolla will send matching designs straight to your phone.</p>
+    </div>
+    <div class="chips rv" role="group" aria-label="Choose an occasion">
+      <button class="chip" aria-pressed="true" data-k="wedding">Wedding</button>
+      <button class="chip" aria-pressed="false" data-k="daily">Daily wear</button>
+      <button class="chip" aria-pressed="false" data-k="gift">A gift</button>
+      <button class="chip" aria-pressed="false" data-k="engage">Engagement</button>
+      <button class="chip" aria-pressed="false" data-k="invest">Investment</button>
+    </div>
+    <div class="pick rv">
+      <div class="pick-img"><img id="pickImg" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1100&q=80" alt=""></div>
+      <div class="pick-copy fade" id="pickCopy">
+        <span class="label" id="pickLabel">For the bride</span>
+        <h3 id="pickTitle">The full bridal set, without the full weight.</h3>
+        <p id="pickText">Necklace, haram, bangles and earrings designed as one look. Choose traditional temple designs or our lightweight bridal range to keep the budget where you want it.</p>
+        <div class="tags" id="pickTags"><span>Haram</span><span>Choker</span><span>Bangles</span><span>Jhumkas</span></div>
+        <a class="btn btn-wa wa-link" id="pickBtn" data-msg="Hi, I'm looking for bridal jewellery. Can you send me some bridal set designs?" href="#"><svg><use href="#wa"/></svg><span id="pickBtnText">Send me bridal sets</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collections">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="label">In the showroom</span><h2>Come in for these. Leave with a favourite.</h2></div>
+      <p>Every collection is on display at our Grand Mall showroom. Try them on, compare weights and see the price before you decide.</p>
+    </div>
+    <div class="cols">
+      <a class="col rv wa-link" data-msg="Hi, can you send me your latest necklace designs?" href="#"><div class="ph"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&q=80" alt="Gold necklaces" loading="lazy"></div><h3>Necklaces <i>→</i></h3><p>From fine chains to statement pieces</p></a>
+      <a class="col rv wa-link" data-msg="Hi, can you send me your latest ring designs?" href="#"><div class="ph"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&q=80" alt="Diamond ring" loading="lazy"></div><h3>Rings <i>→</i></h3><p>Certified diamonds and solid gold bands</p></a>
+      <a class="col rv wa-link" data-msg="Hi, can you send me your latest earring designs?" href="#"><div class="ph"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=700&q=80" alt="Gold earrings" loading="lazy"></div><h3>Earrings <i>→</i></h3><p>Studs, hoops and jhumkas</p></a>
+      <a class="col rv wa-link" data-msg="Hi, can you send me your latest bracelet and bangle designs?" href="#"><div class="ph"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=700&q=80" alt="Gold bracelet" loading="lazy"></div><h3>Bracelets <i>→</i></h3><p>Bangles and bracelets for every wrist</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="zari draw"></div>
+
+<section class="exchange" id="exchange">
+  <div class="wrap">
+    <span class="label rv">Old gold exchange</span>
+    <h2 class="rv">Your old gold can pay for your new favourite.</h2>
+    <p class="intro rv">Bring in jewellery you no longer wear. We test it, value it and put it towards your next piece, and you see every number before you agree.</p>
+    <div class="steps">
+      <div class="step rv"><span class="n">STEP 1</span><h3>Bring it in</h3><p>Any old gold jewellery you no longer wear, including broken pieces.</p></div>
+      <div class="step rv"><span class="n">STEP 2</span><h3>Tested in front of you</h3><p>We check purity and weight while you watch. Nothing leaves the counter.</p></div>
+      <div class="step rv"><span class="n">STEP 3</span><h3>Every deduction explained</h3><p>You get a clear value, line by line. Exchange only if you're happy with it.</p></div>
+    </div>
+    <a class="btn wa-link rv" data-msg="Hi, I'd like to exchange my old gold. What should I bring?" href="#"><svg><use href="#wa"/></svg>Ask about exchanging my gold</a>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="score rv">
+      <span class="label">What Rolla says</span>
+      <b>4.8</b>
+      <div class="stars" aria-label="4.8 out of 5 stars">★★★★★</div>
+      <p>From 2,881 reviews on Google</p>
+    </div>
+    <div class="quotes">
+      <div class="q rv"><p>"The diamonds are set to look like blooming stars. Elegant, lightweight and perfect for daily wear."</p><cite>Akshay · Lightweight collection</cite></div>
+      <div class="q rv"><p>"Mubashir was patient and professional. He helped me find the perfect piece with no pressure at all."</p><cite>Jithin · Rolla showroom</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="rv">
+      <span class="label">Visit the showroom</span>
+      <h2>Grand Mall, ground floor. Shop 6.</h2>
+      <div class="rows">
+        <div class="r"><span>Address</span><div>Grand Mall, Ground Floor, Shop 6<br>Al Mussalla, Rolla, Sharjah</div></div>
+        <div class="r"><span>Hours</span><div>Open until 11:30 PM</div></div>
+        <div class="r"><span>Call</span><div><a href="tel:+971525918916">+971 52 591 8916</a></div></div>
+        <div class="r"><span>Also in</span><div>Al Nahda Sharjah, Muweilah, Ajman, Dubai and across India, Oman, Bahrain, Kuwait and Malaysia</div></div>
+      </div>
+    </div>
+    <div class="tip rv">
+      <span class="label">Local tip</span>
+      <h3>Thursday evenings are our busiest.</h3>
+      <p>Want a quieter visit and more time with our team? Come earlier in the day, or message us first and we'll have your designs ready when you arrive.</p>
+      <a class="btn wa-link" data-msg="Hi, I'd like to book a time to visit the Rolla showroom." href="#"><svg><use href="#wa"/></svg>Book my visit</a>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Nakshathra+Jewellery+Rolla+Grand+Mall+Sharjah" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Nakshathra Gold &amp; Diamonds · Rolla, Sharjah</span><span>22K (916) &amp; 18K hallmarked gold</span></div></footer>
+
+<a class="wa-float wa-link" id="waFloat" data-msg="Hi Nakshathra Rolla, could you share today's 22K gold rate?" href="#"><svg><use href="#wa"/></svg>Today's gold rate</a>
+
+<script>
+(function(){
+  var PHONE='971525918916';
+  function wire(a){a.href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(a.dataset.msg||'Hi Nakshathra Rolla');a.target='_blank';a.rel='noopener'}
+  document.querySelectorAll('.wa-link').forEach(wire);
+
+  // hero word cascade
+  document.querySelectorAll('.hero h1 .w').forEach(function(w,i){w.style.transitionDelay=(0.08*i+0.15)+'s'});
+  requestAnimationFrame(function(){setTimeout(function(){document.body.classList.add('loaded')},60)});
+
+  // reveals
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.rv,.zari.draw,.scale').forEach(function(el){
+    if(el.parentElement&&(el.parentElement.classList.contains('cols')||el.parentElement.classList.contains('steps')||el.parentElement.classList.contains('quotes'))){
+      el.style.transitionDelay=([].indexOf.call(el.parentElement.children,el)*0.12)+'s';}
+    io.observe(el)});
+
+  // floating button after hero
+  var f=document.getElementById('waFloat');
+  addEventListener('scroll',function(){f.classList.toggle('show',scrollY>innerHeight*.7)},{passive:true});
+
+  // occasion picker
+  var data={
+    wedding:{img:'photo-1610030469983-98e550d6193c',label:'For the bride',title:'The full bridal set, without the full weight.',text:'Necklace, haram, bangles and earrings designed as one look. Choose traditional temple designs or our lightweight bridal range to keep the budget where you want it.',tags:['Haram','Choker','Bangles','Jhumkas'],btn:'Send me bridal sets',msg:"Hi, I'm looking for bridal jewellery. Can you send me some bridal set designs?"},
+    daily:{img:'photo-1596944924616-7b38e7cfac36',label:'Everyday',title:'Light enough to forget you are wearing it.',text:'Fine chains, slim bracelets and small studs in 22K gold. Pieces you put on in the morning and never need to take off.',tags:['Chains','Bracelets','Studs','Pendants'],btn:'Send me daily wear',msg:"Hi, I'm looking for lightweight daily wear gold. Can you send me some designs?"},
+    gift:{img:'photo-1617038220319-276d3cfab638',label:'A gift',title:'A gift that keeps its value for life.',text:'Earrings, pendants and baby bangles that mean something today and are still worth something in twenty years. Tell us the budget and we will suggest the best options.',tags:['Earrings','Pendants','Baby bangles','Rings'],btn:'Help me choose a gift',msg:"Hi, I'm looking for a gold gift. My budget is around: "},
+    engage:{img:'photo-1605100804763-247f67b3557e',label:'Engagement',title:'The ring they will show everyone.',text:'Certified diamond solitaires, halos and matching bands. See the certificate, compare the stones and choose with confidence.',tags:['Solitaires','Halo rings','Couple bands','Certified'],btn:'Send me engagement rings',msg:"Hi, I'm looking for an engagement ring. Can you send me some designs?"},
+    invest:{img:'photo-1622398925373-3f91b1e275f5',label:'Investment',title:'Buy gold that works for you.',text:'Simple, high-purity pieces with low making charges, ideal when you are buying gold to hold. Ask for today\'s rate and the making charge before you visit.',tags:['22K 916','Plain chains','Plain bangles','Low making'],btn:"Get today's rate",msg:"Hi, I'd like to buy gold as an investment. What is today's rate and the making charge?"}
+  };
+  var img=document.getElementById('pickImg'),copy=document.getElementById('pickCopy');
+  Object.keys(data).forEach(function(k){var p=new Image();p.src='https://images.unsplash.com/'+data[k].img+'?w=1100&q=80'});
+  document.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){
+    document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+    var d=data[c.dataset.k];img.classList.add('out');copy.classList.add('out');
+    setTimeout(function(){
+      img.src='https://images.unsplash.com/'+d.img+'?w=1100&q=80';
+      document.getElementById('pickLabel').textContent=d.label;
+      document.getElementById('pickTitle').textContent=d.title;
+      document.getElementById('pickText').textContent=d.text;
+      document.getElementById('pickTags').innerHTML=d.tags.map(function(t){return '<span>'+t+'</span>'}).join('');
+      document.getElementById('pickBtnText').textContent=d.btn;
+      var b=document.getElementById('pickBtn');b.dataset.msg=d.msg;wire(b);
+      img.classList.remove('out');copy.classList.remove('out');
+    },350);
+  })});
+})();
+</script>
+</body>
+</html>
